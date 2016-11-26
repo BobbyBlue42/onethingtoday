@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<title>One Thing Today</title>
+  		<title>One Thing Today | Donate</title>
 		<meta name="description" content="">
 		<meta title="One Thing Today">
 <!-- 	    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -20,16 +20,16 @@
 	</head>
 
 	<body>
-		<div id="today-item" class="white-bg">
-			<h1>
-				Don't use plastic bags today.
-			</h1>
-		</div>
-		<div id="action-panel" class="lt-green-bg">
-			<p>12,348 people have said yes today.</p>
-			<a href="./done"><button class="dk-green-btn">Count me in</button></a>
-			<h3><a href="/donate">Donate instead</a></h3>
+		<button class="minus-btn" type="button" onclick="decrement()">-</button><!--
+		--><button class="plus-btn" type="button" onclick="increment()">+</button>
+		<div class="circle" id="circle">0</div>
+		<button class="done-btn" id="done" type="button" onclick="submit()">Donate</button>
+		<p>
+			<div class="dollar" id="counter">13453</div>
+			<div class="goal">Put towards Green Peace today.</div>
+		</p>
+		<div class="bottom-div">
+			<a href="#info"><button class="bottom-btn">Why Green Peace?</button></a>
 		</div>
 	</body>
-	
 </html>

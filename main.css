@@ -23,11 +23,23 @@ p {
 	font-size: 30px;
 }
 
-#action-panel > a {
+a {
 	color: white;
 }
 
-#action-panel > a:hover {
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: white;
+}
+
+a:selected {
+	color: white;
+}
+
+a:active {
 	color: white;
 }
 
@@ -50,6 +62,14 @@ p {
 	margin: 15px 0 5px;
 	border-radius: 5%;
 	padding: 0px 50px;
+}
+
+.dk-green-btn:hover {
+	background-color: #378b3b;
+}
+
+.dk-green-btn:active {
+	background-color: #277b2b;
 }
 
 .minus-btn {
@@ -103,6 +123,10 @@ p {
 	z-index: 1000;
 	text-align: center;
 	display: none;
+}
+
+.dollar:before {
+	content: '$';
 }
 
 .bottom-div {
