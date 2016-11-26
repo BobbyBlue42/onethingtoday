@@ -8,14 +8,20 @@ body {
 h1 {
 	text-align: center;
 	font-size: 50px;
-	padding: 50px;
+	padding: 10px;
 	font-weight: 900;
 	font-style: italic;
 }
 
+h2 {
+	text-align: center;
+	font-size: 28px;
+	padding-bottom: 20px;
+}
+
 h3 {
 	font-weight: 900;
-	font-size: 36px;
+	font-size: 30px;
 }
 
 p {
@@ -41,6 +47,26 @@ a:selected {
 
 a:active {
 	color: white;
+}
+
+.green-link {
+	color: #479b4b;
+}
+
+.green-link:visited {
+	color: #479b4b;
+}
+
+.green-link:hover {
+	color: #479b4b;
+}
+
+.green-link:selected {
+	color: #479b4b;
+}
+
+.green-link:active {
+	color: #479b4b;
 }
 
 #capsule {
@@ -103,6 +129,41 @@ a:active {
 
 .lt-green-btn:hover {
 	color: #fff !important;
+}
+
+#info-section {
+	text-align: center;
+}
+
+.white-btn {
+	background-color: #fff;
+	color: #479b4b;
+	border-color: #479b4b;
+	border-width: 1px;
+	box-shadow: none;
+	width: 100px;
+}
+
+.white-btn.active {
+	background-color: #479b4b;
+	color: #fff;
+}
+
+.white-btn:hover {
+	color: #479b4b;
+}
+
+.white-btn.active:hover {
+	color: #fff;
+}
+
+.section {
+	display: none;
+	font-size: 
+}
+
+.section.active {
+	display: block;
 }
 
 .minus-btn {
@@ -210,7 +271,7 @@ a:active {
 #action-panel {
 	padding: 30px 15px;
 	text-align: center;
-
+	margin-bottom: 20px;
 }
 
 #counter {
