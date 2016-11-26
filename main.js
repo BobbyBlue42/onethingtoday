@@ -1,11 +1,21 @@
-$(document).ready(
-	function() {
-		var counter = document.getElementById('counter');
-		if (counter) {
-			document.getElementById('counter').innerHTML = ensureCommas(counter.innerHTML);
-		}
+$(document).ready(function() {
+
+	var counter = document.getElementById('counter');
+	if (counter) {
+		document.getElementById('counter').innerHTML = ensureCommas(counter.innerHTML);
 	}
-);
+
+	$(".lt-green-btn").click(function() {
+		if (!$(this).hasClass("active")) {
+			$(".lt-green-btn").removeClass("active");
+			$(this).addClass("active");
+		}
+	});
+
+
+$(".thumbs:not(.selected)").hover()
+
+});
 
 function increment() {
 	var count = Number(document.getElementById('circle').innerHTML.replace(',','')) + 1;
@@ -36,3 +46,4 @@ function numberWithCommas(x) {
 function ensureCommas(x) {
 	return x.toString().replace(",", "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
