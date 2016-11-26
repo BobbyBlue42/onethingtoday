@@ -119,10 +119,7 @@ a:active {
 	border-color: #479b4b;
 	border-width: 1px;
 	box-shadow: none;
-}
-
-#button-holder {
-	margin-bottom: 30px;
+	width: 100px;
 }
 
 .lt-green-btn.active {
