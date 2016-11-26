@@ -88,37 +88,53 @@ a:active {
 .minus-btn {
 	background-color: #479b4b;
 	border: none;
-	font-size: 48px;
+	font-size: 60px;
 	color: white;
 	width: 50%;
 	height: 300px;
-	padding-right: 60px;
-	padding-bottom: 80px;
+	padding-right: 75px;
 }
 
 .plus-btn {
 	background-color: #4caf50;
 	border: none;
-	font-size: 48px;
+	font-size: 60px;
 	color: white;
 	width: 50%;
 	height: 300px;
-	padding-left: 60px;
-	padding-bottom: 80px;
+	padding-left: 75px;
 }
 
 .circle {
 	background-color: white;
-	border-radius: 60px;
+	border-radius: 75px;
 	position: absolute;
-	font-size: 48px;
+	font-size: 60px;
 	color: #479b4b;
-	height: 120px;
-	width: 120px;
-	top: 60px;
-	padding-top: 26px;
-	left: calc(50% - 60px);
+	height: 150px;
+	width: 150px;
+	top: 75px;
+	padding-top: 33px;
+	left: calc(50% - 75px);
 	z-index: 1000;
+	text-align: center;
+}
+
+.mission-top {
+	position: absolute;
+	top: 10px;
+	color: white;
+	font-size: 36px;
+	width: 100%;
+	text-align: center;
+}
+
+.mission-bottom {
+	position: absolute;
+	top: 234px;
+	color: white;
+	font-size: 36px;
+	width: 100%;
 	text-align: center;
 }
 
