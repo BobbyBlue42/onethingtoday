@@ -1,12 +1,83 @@
+/*light green: #4caf50 */
+/*dark green: #479b4b */
+
 body {
-	padding-left: 2%;
-	padding-right: 2%;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1 {
 	text-align: center;
 	font-size: 50px;
 	padding: 50px;
+	font-weight: 900;
+	font-style: italic;
+}
+
+p {
+	text-align: center;
+	font-size: 30px;
+}
+
+.white-bg {
+	background-color: #fff;
+	color: #4caf50
+}
+
+.lt-green-bg {
+	background-color: #4caf50;
+	color: #fff;
+}
+
+.dk-green-btn {
+	background-color: #479b4b;
+	border: none;
+	font-size: 48px;
+	font-style: initial;
+	font-weight: 900;
+	margin: 15px 0;
+	border-radius: 5%;
+	padding: 0px 50px;
+}
+
+.minus-btn {
+	background-color: #479b4b;
+	border: none;
+	font-size: 48px;
+	color: white;
+	width: 50%;
+	height: 300px;
+	padding-right: 50px;
+}
+
+.plus-btn {
+	background-color: #4caf50;
+	border: none;
+	font-size: 48px;
+	color: white;
+	width: 50%;
+	height: 300px;
+	padding-left: 50px;
+}
+
+.circle {
+	background-color: white;
+	border-radius: 50px;
+	position: absolute;
+	font-size: 40px;
+	color: #479b4b;
+	height: 100px;
+	width: 100px;
+	top: 100px;
+	padding-top: 20px;
+	left: calc(50% - 50px);
+	z-index: 1000;
+	text-align: center;
+}
+
+#action-panel {
+	padding: 30px 15px;
+	text-align: center;
+
 }
 
 .phone {
