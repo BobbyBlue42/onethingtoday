@@ -12,6 +12,20 @@ $(document).ready(function() {
 		}
 	});
 
+	$(".white-btn").click(function() {
+		if (!$(this).hasClass("active")) {
+			$(".white-btn").removeClass("active");
+			$(".section").removeClass("active");
+			$(this).addClass("active");
+			var id = $(this).attr('id').replace("-btn", "");
+			$("#" + id).addClass("active");
+
+			$('html, body').animate({
+				scrollTop: $(this).offset().top
+			}, 1000);
+		}
+	});
+
 
 $(".thumbs:not(.selected)").hover()
 
