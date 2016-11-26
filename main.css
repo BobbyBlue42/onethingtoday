@@ -32,13 +32,14 @@ p {
 }
 
 .capsule {
-	display: inline-block;
+	display: block;
 	background-color: #fff;
 	color: #4caf50;
 	border-radius: 50px;
 	font-size: 48px;
 	padding: 8px 40px;
 	margin: 30px auto;
+	max-width: 270px;
 }
 
 .white-bg {
@@ -48,6 +49,7 @@ p {
 }
 
 .lt-green-bg {
+	display: block;
 	padding: 30px 40px; 
 	background-color: #4caf50;
 	color: #fff;
@@ -63,6 +65,27 @@ p {
 	margin: 15px 0 5px;
 	border-radius: 10px;
 	padding: 0px 50px;
+}
+
+.lt-green-btn {
+	background-color: #4caf50;
+	color: #fff !important;
+	border-color: #479b4b;
+	border-width: 1px;
+	box-shadow: none;
+}
+
+#button-holder {
+	margin-bottom: 30px;
+}
+
+.lt-green-btn.active {
+	background-color: #479b4b !important;
+	color: #fff !important;
+}
+
+.lt-green-btn:hover {
+	color: #fff !important;
 }
 
 .minus-btn {
@@ -133,6 +156,7 @@ p {
 }
 
 .caption {
+	display: block;
 	font-size: 14px;
 	padding: 2px;
 }
