@@ -31,14 +31,27 @@ p {
 	color: white;
 }
 
+.capsule {
+	display: inline-block;
+	background-color: #fff;
+	color: #4caf50;
+	border-radius: 50px;
+	font-size: 48px;
+	padding: 8px 40px;
+	margin: 30px auto;
+}
+
 .white-bg {
 	background-color: #fff;
-	color: #4caf50
+	color: #4caf50;
+	padding: 30px 40px; 
 }
 
 .lt-green-bg {
+	padding: 30px 40px; 
 	background-color: #4caf50;
 	color: #fff;
+	text-align: center;
 }
 
 .dk-green-btn {
@@ -48,7 +61,7 @@ p {
 	font-style: italic;
 	font-weight: 900;
 	margin: 15px 0 5px;
-	border-radius: 5%;
+	border-radius: 10px;
 	padding: 0px 50px;
 }
 
@@ -117,6 +130,17 @@ p {
 	height: 72px;
 	width: 60%;
 	border-radius: 36px;
+
+.caption {
+	font-size: 14px;
+	padding: 2px;
+}
+
+.green-dot-container {
+	margin-top: 30px; 
+	font-size: 30px;
+	text-align: center;
+	line-height: 60%;
 }
 
 #action-panel {
