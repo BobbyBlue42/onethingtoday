@@ -263,7 +263,7 @@ a:active {
 
 .caption {
 	display: block;
-	font-size: 14px;
+	font-size: 16px;
 	padding: 2px;
 }
 
@@ -309,4 +309,31 @@ a:active {
 	.website {
 		display: block !important;
 	}
+}
+
+.section > .col-md-4 {
+	padding: 10px 0;
+}
+
+.green-dot-container > .row > .col-md-4 {
+	padding: 10px 0;
+}
+
+@media screen and (min-width: 991px) {
+	.white-bg {
+		padding: 100px 80px 40px 80px;
+	}
+
+	#today-item {
+		margin: 50px 0;
+	}
+
+	.section > .col-md-4 {
+		padding: 10px;
+		font-size: 18px;
+	}
+}
+
+.fa {
+	margin: 40px 0 10px 0;
 }
