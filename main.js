@@ -20,9 +20,6 @@ $(".thumbs:not(.selected)").hover()
 function increment() {
 	var count = Number(document.getElementById('circle').innerHTML.replace(',','')) + 1;
 	var counter = Number(document.getElementById('counter').innerHTML.replace(',','')) + 1;
-	if (count == 1) {
-		document.getElementById('done').style.display = "block";
-	}
 	document.getElementById('circle').innerHTML = numberWithCommas(count);
 	document.getElementById('counter').innerHTML = numberWithCommas(counter);
 }
@@ -33,9 +30,6 @@ function decrement() {
 	if (count >= 0) {
 		document.getElementById('circle').innerHTML = numberWithCommas(count);
 		document.getElementById('counter').innerHTML = numberWithCommas(counter);
-		if (count == 0) {
-			document.getElementById('done').style.display = "none";
-		}
 	}
 }
 

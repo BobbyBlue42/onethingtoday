@@ -143,6 +143,7 @@ a:active {
 }
 
 .mission-top {
+	pointer-events: none;
 	position: absolute;
 	top: 10px;
 	color: white;
@@ -152,6 +153,7 @@ a:active {
 }
 
 .mission-bottom {
+	pointer-events: none;
 	position: absolute;
 	top: 234px;
 	color: white;
