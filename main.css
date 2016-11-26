@@ -105,15 +105,36 @@ p {
 	display: none;
 }
 
+.bottom-div {
+	text-align: center;
+}
+
+.bottom-btn {
+	border: none;
+	background-color: #479b4b;
+	color: white;
+	font-size: 24px;
+	height: 72px;
+	width: 60%;
+	border-radius: 36px;
+}
+
 #action-panel {
 	padding: 30px 15px;
 	text-align: center;
 
 }
 
-.counter-notice {
-	background-color: white;
+#counter {
 	color: #479b4b;
+	font-size: 52px;
+	text-align: center;
+}
+
+.goal {
+	color: #479b4b;
+	font-size: 36px;
+	text-align: center;
 }
 
 .phone {
