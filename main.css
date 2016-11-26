@@ -43,7 +43,7 @@ a:active {
 	color: white;
 }
 
-.capsule {
+#capsule {
 	display: block;
 	background-color: #fff;
 	color: #4caf50;
@@ -62,7 +62,7 @@ a:active {
 
 .lt-green-bg {
 	display: block;
-	padding: 30px 40px; 
+	padding: 30px 20px; 
 	background-color: #4caf50;
 	color: #fff;
 	text-align: center;
@@ -93,7 +93,7 @@ a:active {
 	border-color: #479b4b;
 	border-width: 1px;
 	box-shadow: none;
-	width: 100px;
+	width: 80px;
 }
 
 .lt-green-btn.active {
