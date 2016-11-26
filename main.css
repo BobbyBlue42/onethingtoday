@@ -23,6 +23,14 @@ p {
 	font-size: 30px;
 }
 
+#action-panel > a {
+	color: white;
+}
+
+#action-panel > a:hover {
+	color: white;
+}
+
 .white-bg {
 	background-color: #fff;
 	color: #4caf50
