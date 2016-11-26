@@ -57,7 +57,7 @@ a:active {
 .white-bg {
 	background-color: #fff;
 	color: #4caf50;
-	padding: 30px 40px; 
+	padding: 30px; 
 }
 
 .lt-green-bg {
@@ -202,9 +202,9 @@ a:active {
 
 .green-dot-container {
 	margin-top: 30px; 
-	font-size: 30px;
+	font-size: 24px;
 	text-align: center;
-	line-height: 60%;
+	line-height: 75%;
 }
 
 #action-panel {
