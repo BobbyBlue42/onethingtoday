@@ -97,7 +97,7 @@ a:active {
 .dk-green-btn {
 	background-color: #479b4b;
 	border: none;
-	font-size: 48px;
+	font-size: 42px;
 	font-style: italic;
 	font-weight: 900;
 	margin: 15px 0 5px;
@@ -141,7 +141,8 @@ a:active {
 	border-color: #479b4b;
 	border-width: 1px;
 	box-shadow: none;
-	width: 100px;
+	width: 80px;
+	font-size: 18px;
 }
 
 .white-btn.active {
@@ -159,11 +160,16 @@ a:active {
 
 .section {
 	display: none;
-	font-size: 
+	padding-top: 20px;
 }
 
 .section.active {
 	display: block;
+}
+
+.section > p {
+	font-size: 16px;
+	margin-top: 10px;
 }
 
 .minus-btn {
@@ -204,9 +210,9 @@ a:active {
 .mission-top {
 	pointer-events: none;
 	position: absolute;
-	top: 10px;
+	top: 16px;
 	color: white;
-	font-size: 36px;
+	font-size: 30px;
 	width: 100%;
 	text-align: center;
 }
@@ -214,9 +220,9 @@ a:active {
 .mission-bottom {
 	pointer-events: none;
 	position: absolute;
-	top: 234px;
+	top: 240px;
 	color: white;
-	font-size: 36px;
+	font-size: 30px;
 	width: 100%;
 	text-align: center;
 }
@@ -269,7 +275,7 @@ a:active {
 }
 
 #action-panel {
-	padding: 30px 15px;
+	padding: 10px;
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -282,8 +288,9 @@ a:active {
 
 .goal {
 	color: #479b4b;
-	font-size: 36px;
+	font-size: 30px;
 	text-align: center;
+	padding: 0px 10px;
 }
 
 .phone {
