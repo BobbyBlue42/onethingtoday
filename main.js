@@ -37,13 +37,36 @@ $(document).ready(function() {
 
 	$(".thumbs:not(.selected)").hover()
 
+	incrementLoop();
+	decrementLoop();
+
 });
+
+var incrementing = false;
+var decrementing = false;
+var loopTimer = 150;
 
 function increment() {
 	var count = Number(document.getElementById('circle').innerHTML.replace(',','')) + 1;
 	var counter = Number(document.getElementById('counter').innerHTML.replace(',','')) + 1;
 	document.getElementById('circle').innerHTML = numberWithCommas(count);
 	document.getElementById('counter').innerHTML = numberWithCommas(counter);
+}
+
+function startIncrementing() {
+	incrementing = true;
+}
+
+function stopIncrementing() {
+	incrementing = false;
+}
+
+function incrementLoop() {
+	setInterval(function () {
+		if (incrementing) {
+			increment();
+		}
+	}, loopTimer);
 }
 
 function decrement() {
@@ -53,6 +76,22 @@ function decrement() {
 		document.getElementById('circle').innerHTML = numberWithCommas(count);
 		document.getElementById('counter').innerHTML = numberWithCommas(counter);
 	}
+}
+
+function startDecrementing() {
+	decrementing = true;
+}
+
+function stopDecrementing() {
+	decrementing = false;
+}
+
+function decrementLoop() {
+	setInterval(function () {
+		if (decrementing) {
+			decrement();
+		}
+	}, loopTimer);
 }
 
 function numberWithCommas(x) {

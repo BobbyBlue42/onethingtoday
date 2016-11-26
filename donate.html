@@ -24,8 +24,8 @@ mixpanel.init("b48a970f2b46c65331aca0690f94a498");</script><!-- end Mixpanel -->
 	</head>
 
 	<body>
-		<button class="minus-btn" type="button" onclick="decrement()">-</button><!--
-		--><button class="plus-btn" type="button" onclick="increment()">+</button>
+		<button class="minus-btn" type="button" onclick="decrement()" onmousedown="startDecrementing()" onmouseup="stopDecrementing()" onmouseout="stopDecrementing()" ontouchstart="startDecrementing()" ontouchmove="stopDecrementing()" ontouchend="stopDecrementing()">-</button><!--
+		--><button class="plus-btn" type="button" onclick="increment()" onmousedown="startIncrementing()" onmouseup="stopIncrementing()" onmouseout="stopIncrementing()" ontouchstart="startIncrementing()" ontouchmove="stopIncrementing()" ontouchend="stopIncrementing()">+</button>
 		<div class="mission-top">I have donated</div>
 		<div class="circle dollar" id="circle">0</div>
 		<div class="mission-bottom">to Green Peace today.</div>
