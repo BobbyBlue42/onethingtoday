@@ -20,8 +20,13 @@
 	</head>
 
 	<body>
-		<button class="minus-btn" type="button">-</button><!--
-		--><button class="plus-btn" type="button">+</button>
-		<div class="circle">1</div>
+		<button class="minus-btn" type="button" onclick="decrement()">-</button><!--
+		--><button class="plus-btn" type="button" onclick="increment()">+</button>
+		<div class="circle" id="circle">0</div>
+		<button class="done-btn" id="done" type="button" onclick="submit()">Done</button>
+		<p class="counter-notice">
+			<div class="counter">12348</div>
+			<div class="goal">Less plastic bags in the world.</div>
+		</p>
 	</body>
 </html>
