@@ -13,6 +13,12 @@ h1 {
 	font-style: italic;
 }
 
+h2 {
+	text-align: center;
+	font-size: 40px;
+
+}
+
 h3 {
 	font-weight: 900;
 	font-size: 36px;
@@ -41,6 +47,26 @@ a:selected {
 
 a:active {
 	color: white;
+}
+
+.green-link {
+	color: #479b4b;
+}
+
+.green-link:visited {
+	color: #479b4b;
+}
+
+.green-link:hover {
+	color: #479b4b;
+}
+
+.green-link:selected {
+	color: #479b4b;
+}
+
+.green-link:active {
+	color: #479b4b;
 }
 
 .capsule {
