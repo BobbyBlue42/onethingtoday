@@ -44,9 +44,61 @@ p {
 	padding: 0px 50px;
 }
 
+.minus-btn {
+	background-color: #479b4b;
+	border: none;
+	font-size: 48px;
+	color: white;
+	width: 50%;
+	height: 300px;
+	padding-right: 50px;
+}
+
+.plus-btn {
+	background-color: #4caf50;
+	border: none;
+	font-size: 48px;
+	color: white;
+	width: 50%;
+	height: 300px;
+	padding-left: 50px;
+}
+
+.circle {
+	background-color: white;
+	border-radius: 50px;
+	position: absolute;
+	font-size: 40px;
+	color: #479b4b;
+	height: 100px;
+	width: 100px;
+	top: 100px;
+	padding-top: 20px;
+	left: calc(50% - 50px);
+	z-index: 1000;
+	text-align: center;
+}
+
 #action-panel {
 	padding: 30px 15px;
 	text-align: center;
 
 }
 
+.phone {
+	display: block !important;
+}
+
+.website {
+	display: none !important;
+}
+
+@media screen and (min-width: 750px) {
+	.phone {
+		display: none !important;
+	}
+
+	.website {
+		display: block !important;
+	}
+}
