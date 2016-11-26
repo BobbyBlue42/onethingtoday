@@ -23,6 +23,14 @@ p {
 	font-size: 30px;
 }
 
+#action-panel > a {
+	color: white;
+}
+
+#action-panel > a:hover {
+	color: white;
+}
+
 .white-bg {
 	background-color: #fff;
 	color: #4caf50
@@ -51,7 +59,8 @@ p {
 	color: white;
 	width: 50%;
 	height: 300px;
-	padding-right: 50px;
+	padding-right: 60px;
+	padding-bottom: 80px;
 }
 
 .plus-btn {
@@ -61,28 +70,50 @@ p {
 	color: white;
 	width: 50%;
 	height: 300px;
-	padding-left: 50px;
+	padding-left: 60px;
+	padding-bottom: 80px;
 }
 
 .circle {
 	background-color: white;
-	border-radius: 50px;
+	border-radius: 60px;
 	position: absolute;
-	font-size: 40px;
+	font-size: 48px;
 	color: #479b4b;
-	height: 100px;
-	width: 100px;
-	top: 100px;
-	padding-top: 20px;
-	left: calc(50% - 50px);
+	height: 120px;
+	width: 120px;
+	top: 60px;
+	padding-top: 26px;
+	left: calc(50% - 60px);
 	z-index: 1000;
 	text-align: center;
+}
+
+.done-btn {
+	border: none;
+	background-color: white;
+	border-radius: 20px;
+	font-size: 22px;
+	color: #479b4b;
+	height: 40px;
+	width: 120px;
+	position: absolute;
+	top: 220px;
+	left: calc(50% - 60px);
+	z-index: 1000;
+	text-align: center;
+	display: none;
 }
 
 #action-panel {
 	padding: 30px 15px;
 	text-align: center;
 
+}
+
+.counter-notice {
+	background-color: white;
+	color: #479b4b;
 }
 
 .phone {
