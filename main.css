@@ -21,7 +21,7 @@ h2 {
 
 h3 {
 	font-weight: 900;
-	font-size: 30px;
+	font-size: 26px;
 }
 
 p {
@@ -50,6 +50,7 @@ a:active {
 }
 
 .green-link {
+	font-style: italic;
 	color: #479b4b;
 }
 
@@ -78,6 +79,46 @@ a:active {
 	padding: 8px 40px;
 	margin: 30px auto;
 	max-width: 270px;
+}
+
+#streak {
+	height: 40px;
+	width: 80px;
+	background-color: #479b4b;
+	color: white;
+	border-radius: 20px;
+	font-style: italic;
+	font-size: 20px;
+	display: inline-block;
+}
+
+#streak > .fa-stack {
+	color: #4caf50;
+	font-size: 20px;
+}
+
+#streak > .fa-stack > .fa {
+	margin: 0;
+}
+
+#user {
+	height: 40px;
+	width: 40px;
+	background-color: #479b4b;
+	color: white;
+	border-radius: 20px;
+	font-size: 20px;
+	display: inline-block;
+	right: 0;
+}
+
+#user > .fa-stack {
+	color: #4caf50;
+	font-size: 20px;
+}
+
+#user > .fa-stack > .fa {
+	margin: 0;
 }
 
 .white-bg {
@@ -321,7 +362,7 @@ a:active {
 
 @media screen and (min-width: 991px) {
 	.white-bg {
-		padding: 100px 80px 40px 80px;
+		padding: 80px 80px 40px 80px;
 	}
 
 	#today-item {
