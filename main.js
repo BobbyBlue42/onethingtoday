@@ -142,27 +142,27 @@ function switchContextActions(currentTab) {
 	switch (currentTab) {
 		case 'me':
 			$("#capsule")[0].textContent = "5";
-			$("#electricity")[0].textContent = "3,000 watts of electricity";
-			$("#co2")[0].textContent = "0.04 tonnes of CO2";
-			$("#water")[0].textContent = "0.2 litres of water";
+			$("#electricity")[0].textContent = "492.67 Watts of electricity";
+			$("#co2")[0].textContent = "0.3 tonnes of CO2";
+			//$("#water")[0].textContent = "0.2 litres of water";
 			break;
 		case 'everyone':
-			$("#capsule")[0].textContent = "12,349"
-			$("#electricity")[0].textContent = "743,000 watts of electricity";
-			$("#co2")[0].textContent = "53 tonnes of CO2";
-			$("#water")[0].textContent = "430 litres of water";
+			$("#capsule")[0].textContent = "10,459"
+			$("#electricity")[0].textContent = "1,030.5 kiloWatts of electricity";
+			$("#co2")[0].textContent = "640 tonnes of CO2";
+			//$("#water")[0].textContent = "430 litres of water";
 			break;
 		case 'all-time':
-			$("#capsule")[0].textContent = "508,370"
-			$("#electricity")[0].textContent = "17,847,800 watts of electricity";
-			$("#co2")[0].textContent = "391 tonnes of CO2";
-			$("#water")[0].textContent = "26,730 litres of water";
+			$("#capsule")[0].textContent = "170,472"
+			$("#electricity")[0].textContent = "16,797.2 kiloWatts of electricity";
+			$("#co2")[0].textContent = "10,432.9 tonnes of CO2";
+			//$("#water")[0].textContent = "26,730 litres of water";
 			break;
 		default:
-			$("#capsule")[0].textContent = "12,349"
-			$("#electricity")[0].textContent = "743,000 watts of electricity";
-			$("#co2")[0].textContent = "53 tonnes of CO2";
-			$("#water")[0].textContent = "430 litres of water";
+			$("#capsule")[0].textContent = "10,459"
+			$("#electricity")[0].textContent = "1,030.5 kiloWatts of electricity";
+			$("#co2")[0].textContent = "640 tonnes of CO2";
+			//$("#water")[0].textContent = "430 litres of water";
 	}
 }
 
