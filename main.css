@@ -21,7 +21,7 @@ h2 {
 
 h3 {
 	font-weight: 900;
-	font-size: 30px;
+	font-size: 26px;
 }
 
 p {
@@ -49,7 +49,29 @@ a:active {
 	color: white;
 }
 
+footer {
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: calc(100% + 80px);
+	height: 100px;
+	background-color: #479b4b;
+	color: white;
+	padding: 20px;
+	margin: 0 -40px -40px;
+}
+
+a:hover > footer {
+	text-decoration: none;
+}
+
+.logo {
+	font-weight: 900;
+	font-size: 32px;
+}
+
 .green-link {
+	font-style: italic;
 	color: #479b4b;
 }
 
@@ -69,6 +91,10 @@ a:active {
 	color: #479b4b;
 }
 
+.green-link > h3 {
+	margin-top: 0;
+}
+
 #capsule {
 	display: block;
 	background-color: #fff;
@@ -78,6 +104,48 @@ a:active {
 	padding: 8px 40px;
 	margin: 30px auto;
 	max-width: 270px;
+}
+
+#streak {
+	height: 40px;
+	width: 80px;
+	background-color: #479b4b;
+	color: white;
+	border-radius: 20px;
+	font-style: italic;
+	font-size: 20px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#streak > .fa-stack {
+	color: #4caf50;
+	font-size: 20px;
+}
+
+#streak > .fa-stack > .fa {
+	margin: 0;
+}
+
+#user {
+	height: 40px;
+	width: 40px;
+	background-color: #4caf50;
+	color: white;
+	border-radius: 20px;
+	font-size: 20px;
+	display: inline-block;
+	right: 0;
+	float: right;
+}
+
+#user > .fa-stack {
+	color: #479b4b;
+	font-size: 20px;
+}
+
+#user > .fa-stack > .fa {
+	margin: 0;
 }
 
 .white-bg {
@@ -280,6 +348,13 @@ a:active {
 	margin-bottom: 20px;
 }
 
+#action-panel > p {
+	font-style: italic;
+	color: #479b4b;
+	margin: 10px;
+	font-size: 18px;
+}
+
 #counter {
 	color: #479b4b;
 	font-size: 52px;
@@ -321,7 +396,7 @@ a:active {
 
 @media screen and (min-width: 991px) {
 	.white-bg {
-		padding: 100px 80px 40px 80px;
+		padding: 80px 80px 40px 80px;
 	}
 
 	#today-item {
@@ -332,8 +407,70 @@ a:active {
 		padding: 10px;
 		font-size: 18px;
 	}
+
+	footer {
+		position: fixed;
+		margin: 0;
+		width: 100%;
+	}
 }
 
 .fa {
 	margin: 40px 0 10px 0;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 40px;
+	border: 1px solid #888;
+	width: 50%;
+	font-size: 24px;
+	text-align: center;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: -20px;
+	margin-right: -20px;
+}
+
+.close > .fa {
+	margin: 0;
+}
+
+.close:hover,
+.close:focus {
+	color: #479b4b;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.streak-number {
+	font-size: 72px;
+}
+
+.fa-stack.middle-icon {
+	margin-top: -14px;
+	font-size: 32px;
+}
+
+.fa-stack.middle-icon > .fa {
+	margin: 0;
 }
