@@ -37,14 +37,15 @@ $(document).ready(function() {
 
 	$(".thumbs:not(.selected)").hover()
 
-	incrementLoop();
+	//incrementLoop();
 	decrementLoop();
 
 });
 
 var incrementing = false;
 var decrementing = false;
-var loopTimer = 150;
+var loopTimer = 350;
+var runningLoop;
 
 function increment() {
 	var count = Number(document.getElementById('circle').innerHTML.replace(',','')) + 1;
@@ -55,18 +56,17 @@ function increment() {
 
 function startIncrementing() {
 	incrementing = true;
+
+	if (incrementing) {
+		runningLoop = setInterval(function () {
+			increment();
+		}, loopTimer);
+	}
 }
 
 function stopIncrementing() {
 	incrementing = false;
-}
-
-function incrementLoop() {
-	setInterval(function () {
-		if (incrementing) {
-			increment();
-		}
-	}, loopTimer);
+	clearInterval(runningLoop);
 }
 
 function decrement() {
@@ -80,18 +80,17 @@ function decrement() {
 
 function startDecrementing() {
 	decrementing = true;
+
+	if (decrementing) {
+		runningLoop = setInterval(function () {
+			decrement();
+		}, loopTimer);
+	}
 }
 
 function stopDecrementing() {
 	decrementing = false;
-}
-
-function decrementLoop() {
-	setInterval(function () {
-		if (decrementing) {
-			decrement();
-		}
-	}, loopTimer);
+	clearInterval(runningLoop);
 }
 
 function numberWithCommas(x) {
