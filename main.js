@@ -34,6 +34,26 @@ $(document).ready(function() {
 		}
 	});
 
+	var modal = document.getElementById('modal');
+	if (modal) {
+		var streak = document.getElementById('streak');
+		var span = document.getElementsByClassName('close')[0];
+
+		streak.onclick = function () {
+			modal.style.display = "block";
+		}
+
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	}
+
 
 	$(".thumbs:not(.selected)").hover()
 
